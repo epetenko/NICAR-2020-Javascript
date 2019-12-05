@@ -14,15 +14,15 @@ Javascript is the **heart**: It keeps everything moving and decides what action 
 
 This tutorial folder contains several documents: An index.html file, a script.js file, and a style.css file. Double click on index.html and it should open in your default browser. It'll look like this:
 
-!(images/Beginner_page.png)
+![beginner page](images/Beginner_page.png)
 
 Not much there. But wait. There's a hidden way to see what Javascript is doing on this webpage. To see it, you need to access Developer Tools:
 
-![images/A_peek_at_your_console.png]
+![A peek at your console](images/A_peek_at_your_console.png)
 
 Something like this will appear:
 
-![images/console.png]
+![console](images/console.png)
 
 We can use this to write some Javascript! Type the following, character-by-character, into that space next to your cursor: 
 
@@ -30,17 +30,17 @@ We can use this to write some Javascript! Type the following, character-by-chara
 
 You should see something like this:
 
-![images/hello.png]
+![hello]([images/hello.png)
 
 By typing `console.log()`, you're talking directly to the Javascript, asking it to repeat what you tell it to. It's a good way to check whether your code understands you — is it printing what you ask it to print?
 
 You can also change your Javascript by making changes to script.js. Open up that file and type in `console.log("Whatever message you like")`
 
-![images/welcome_to_nicar.png]
+![welcome to nicar](images/welcome_to_nicar.png)
 
 Save that file, then refresh your browser. You should see your message pop up:
 
-![images/welcome_2.png]
+![welcome](images/welcome_2.png)
 
 Great! One last note: Another basic thing you won't see appear in the front-end is comments. You can leave a message to yourself like this:
 
@@ -83,7 +83,7 @@ console.log(array_variable[0])
 
 Again, refresh and you'll see how we logged all those variables:
 
-![images/variables.png]
+![variables](images/variables.png)
 
 #### Loops
 
@@ -101,7 +101,7 @@ for (i = 0; i < 5; i++) {
 
 Refresh the page and you should see that your code logged every element of your array:
 
-![images/for_loop_array.png]
+![for loop array](images/for_loop_array.png)
 
 You can also do the same thing with arrays using `forEach`. This time I told it to perform a more specific function -- namely, add 5 to each element:
 
@@ -150,7 +150,7 @@ for (i = 0; i < 3; i++) {
 
 If you add that to your code, your console will print something like this:
 
-![images/printing_a_json.png]
+![printing a json](images/printing_a_json.png)
 
 To pull a single data point, you can reference it with its column name. You can do that once, or loop through the whole thing!
 
@@ -164,7 +164,7 @@ pets.forEach(function(obj){
 
 You'll see the name of each pet appear:
 
-![images/pet_names.png]
+![pet names](images/pet_names.png)
 
 #### Interacting with HTML
 
@@ -178,7 +178,7 @@ document.getElementById('hello').innerHTML = 'Your first front-end Javascript!';
 ```
 You'll get something like this:
 
-!['images/first_html_change.png']
+![first html change]('images/first_html_change.png')
 
 This Javascript works by accessing the **DOM**, AKA the Document Object Model, the underlying structure of HTML. You tell it the element you want and edit it with Javascript.
 
@@ -226,7 +226,7 @@ function showNames() {
 ```
 Here's the result:
 
-![images/reveal_pet_names.png]
+![reveal pet names](images/reveal_pet_names.png)
 
 #### If/else statements
 
@@ -275,7 +275,7 @@ function testPets() {
 ```
 The result:
 
-![images/pet_test.png]
+![pet test](images/pet_test.png)
 
 #### A quick rundown on plugins
 
@@ -298,4 +298,4 @@ $('#jquery-button').click(function(d) {
 
 The result:
 
-![images/jquery_button.png]
+![jquery button](images/jquery_button.png)
