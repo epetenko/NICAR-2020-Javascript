@@ -14,7 +14,7 @@ Javascript is the **heart**: It keeps everything moving and decides what action 
 
 This tutorial folder contains several documents: An index.html file, a script.js file, and a style.css file. Double click on index.html and it should open in your default browser. It'll look like this:
 
-![images/Beginner_page.png]
+!(images/Beginner_page.png)
 
 Not much there. But wait. There's a hidden way to see what Javascript is doing on this webpage. To see it, you need to access Developer Tools:
 
