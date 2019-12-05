@@ -22,7 +22,7 @@ Not much there. But wait. There's a hidden way to see what Javascript is doing o
 
 Something like this will appear:
 
-![console](images/console.png)
+![console](images/the_console.png)
 
 We can use this to write some Javascript! Type the following, character-by-character, into that space next to your cursor: 
 
@@ -30,7 +30,7 @@ We can use this to write some Javascript! Type the following, character-by-chara
 
 You should see something like this:
 
-![hello]([images/hello.png)
+![hello](images/hello.png)
 
 By typing `console.log()`, you're talking directly to the Javascript, asking it to repeat what you tell it to. It's a good way to check whether your code understands you — is it printing what you ask it to print?
 
