@@ -1,16 +1,16 @@
-## Beginner Javascript for NICAR 2020
+# Beginner Javascript for NICAR 2020
 
 This is the first class in a series: How to use Javascript to design web visualizations and interactives. In Part One, you'll get an introduction to Javascript and learn how it works on the back-end, with a little bit of designing for front-end. 
 
 This class will go a lot easier if you already know a little HTML and a little CSS. If you are looking for a through tutorial and reference guide, I highly recommend [W3Schools](https://www.w3schools.com/), which starts with HTML and works through Javascript and its plugins. Some other great places to learn more: CodeAcademy, StackExchange, [/r/learnjavascript](https://www.reddit.com/r/learnjavascript/), and Google! I often use Google to reference syntax I've forgotten or brainstorm an error.
 
-#### Why Javascript
+### Why Javascript
 
 Think of it like this: HTML is the **bones** of a website, describing where everything needs to go and creating structure. CSS is the **skin** of a website, dictating its appearance.
 
 Javascript is the **heart**: It keeps everything moving and decides what action a site is going to take. It responds to what your user does and can pull from multiple places on a website.
 
-#### Designing in your browser: Developer tools and your console
+### Designing in your browser: Developer tools and your console
 
 This tutorial folder contains several documents: An index.html file, a script.js file, and a style.css file. Double click on index.html and it should open in your default browser. It'll look like this:
 
@@ -49,7 +49,7 @@ Great! One last note: Another basic thing you won't see appear in the front-end 
 ```
 And it won't appear in your code otherwise. It's just a way to remind yourself what different parts are doing and take notes. 
 
-#### Variables and arrays
+### Variables and arrays
 
 One important element of Javascript and many coding languages is a **variable**. A variable can a lot of things: A number, a string of text, or a collection of numbers or text. It's like a bucket: You can toss in whatever you like, and it won't make any difference to the bucket. Then when you need that thing you can pull it out again.
 
@@ -85,7 +85,7 @@ Again, refresh and you'll see how we logged all those variables:
 
 ![variables](images/variables.png)
 
-#### Loops
+### Loops
 
 A **loop** is a way to tell your code to do something multiple times, or to do something for multiple items. It's pretty essential to data visualization, because usually you have more than one data point -- you want the code to visualize every row in your data.
 
@@ -113,7 +113,7 @@ array_variable.forEach(function(element) {
 
 ```
 
-#### Data structures in Javascript
+### Data structures in Javascript
 
 The most fundamental way Javascript reads data is in a **JSON**, which is basically a nested array that contains its own columns. Here's one JSON, where each new bracket is a single row of data:
 
@@ -166,7 +166,7 @@ You'll see the name of each pet appear:
 
 ![pet names](images/pet_names.png)
 
-#### Interacting with HTML
+### Interacting with HTML
 
 Ok, maybe you're getting a little sick of adding more numbers to the console. You're right, we haven't actually put anything in the HTML, yet. Let's change that.
 
@@ -228,7 +228,7 @@ Here's the result:
 
 ![reveal pet names](images/reveal_pet_names.png)
 
-#### If/else statements
+### If/else statements
 
 Another basic component of Javascript is the ability to test whether something is true. An **if/else** statement checks whether a statement is **True** or **False**, then runs code based on that premise.
 
@@ -277,7 +277,7 @@ The result:
 
 ![pet test](images/pet_test.png)
 
-#### A quick rundown on plugins
+### A quick rundown on plugins
 
 When you're coding in Javascript, you don't need to just run the code itself. You can add plug-ins -- extensions of the code others have created -- to add new features or just save yourself extra coding. 
 
