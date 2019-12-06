@@ -180,7 +180,7 @@ document.getElementById('hello').innerHTML = 'Your first front-end Javascript!';
 ```
 You'll get something like this:
 
-![first html change]('images/first_html_change.png')
+![first html change](images/first_html_change.png)
 
 This Javascript works by accessing the **DOM**, AKA the Document Object Model, the underlying structure of HTML. You tell it the element you want and edit it with Javascript.
 
@@ -191,6 +191,8 @@ var new_element = document.createElement('button')
 new_element.innerHTML = "Let's create a button!"
 document.getElementById('create-button').appendChild(new_element)
 ```
+
+![first button](images/first_button.png)
 
 ...But the button doesn't do anything yet. You have to tell it to do something when the reader clicks. To do that, you tell it `onclick`, to run a **function** -- something you set at the beginning that performs an action when it's triggered.
 
@@ -207,6 +209,8 @@ function myFunction() {
 
 }
 ```
+
+![first button click](images/first_button_click.png)
 
 We can do even fancier things by combining functions and loops. Here's one that will show our data when a user clicks the button.
 
@@ -302,3 +306,9 @@ $('#jquery-button').click(function(d) {
 The result:
 
 ![jquery button](images/jquery_button.png)
+
+Other helpful packages for dataviz include:
+
+- **Datatables**: Create interactive tables in your browser.
+- **Leaflet**: Create free maps with this age-old tool.
+- **D3**: Create data visualizations from scratch on the web.
