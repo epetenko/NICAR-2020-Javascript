@@ -4,6 +4,8 @@ This is the first class in a series: How to use Javascript to design web visuali
 
 This class will go a lot easier if you already know a little HTML and a little CSS. If you are looking for a through tutorial and reference guide, I highly recommend [W3Schools](https://www.w3schools.com/), which starts with HTML and works through Javascript and its plugins. Some other great places to learn more: CodeAcademy, StackExchange, [/r/learnjavascript](https://www.reddit.com/r/learnjavascript/), and Google! I often use Google to reference syntax I've forgotten or brainstorm an error.
 
+I'm typing up this tutorial and code in [Sublime Text](https://www.sublimetext.com/3), a word processing software that makes your code look prettier. But you can still open most script files in TextEdit or get another code viewer like Atom. Another good option is [Glitch](https://glitch.com/), a browser-based platform that lets you view your code on one side and your results on the other.
+
 ### Why Javascript
 
 Think of it like this: HTML is the **bones** of a website, describing where everything needs to go and creating structure. CSS is the **skin** of a website, dictating its appearance.
@@ -44,7 +46,7 @@ Save that file, then refresh your browser. You should see your message pop up:
 
 Great! One last note: Another basic thing you won't see appear in the front-end is comments. You can leave a message to yourself like this:
 
-```
+```javascript
 // A basic comment
 ```
 And it won't appear in your code otherwise. It's just a way to remind yourself what different parts are doing and take notes. 
@@ -55,7 +57,7 @@ One important element of Javascript and many coding languages is a **variable**.
 
 Let's set our first variable:
 
-```
+```javascript
 var first_variable = 5;
 
 console.log(first_variable)
@@ -65,7 +67,7 @@ Refresh your webpage and you'll see that your code remembered what `first_variab
 
 Here are some more examples of variables:
 
-```
+```javascript
 //A text-based variable is always contained in "double" or 'single' quotes.
 var string_variable = "Testing!"
 
@@ -91,7 +93,7 @@ A **loop** is a way to tell your code to do something multiple times, or to do s
 
 In Javascript, one way to loop is to use `for`. You start at 0, go to a certain number, and keep iterating through each number.
 
-```
+```javascript
 
 for (i = 0; i < 5; i++) {
   console.log(array_variable[i]);
@@ -105,7 +107,7 @@ Refresh the page and you should see that your code logged every element of your 
 
 You can also do the same thing with arrays using `forEach`. This time I told it to perform a more specific function -- namely, add 5 to each element:
 
-```
+```javascript
 // A function is a way to create a temporary variable that lives just within that function. In this case, element is just a way to refer to each element of the array.
 array_variable.forEach(function(element) {
 	console.log(element + 5)
@@ -117,7 +119,7 @@ array_variable.forEach(function(element) {
 
 The most fundamental way Javascript reads data is in a **JSON**, which is basically a nested array that contains its own columns. Here's one JSON, where each new bracket is a single row of data:
 
-```
+```javascript
 var pets = [
 	{
 		"Name": "Princess Mia",
@@ -142,7 +144,7 @@ var pets = [
 
 You can loop through each row the same way you loop through an array.
 
-```
+```javascript
 for (i = 0; i < 3; i++) {
   console.log(pets[i]);
 }
@@ -154,7 +156,7 @@ If you add that to your code, your console will print something like this:
 
 To pull a single data point, you can reference it with its column name. You can do that once, or loop through the whole thing!
 
-```
+```javascript
 console.log(pets[0]['Name'] + "- testing")
 
 pets.forEach(function(obj){
@@ -172,7 +174,7 @@ Ok, maybe you're getting a little sick of adding more numbers to the console. Yo
 
 Add a line to your code and refresh:
 
-```
+```javascript
 // This gets an HTML element with the id "hello" and edits the HTML text - 
 document.getElementById('hello').innerHTML = 'Your first front-end Javascript!';
 ```
@@ -184,7 +186,7 @@ This Javascript works by accessing the **DOM**, AKA the Document Object Model, t
 
 You can also create new elements: 
 
-```
+```javascript
 var new_element = document.createElement('button')
 new_element.innerHTML = "Let's create a button!"
 document.getElementById('create-button').appendChild(new_element)
@@ -193,7 +195,7 @@ document.getElementById('create-button').appendChild(new_element)
 ...But the button doesn't do anything yet. You have to tell it to do something when the reader clicks. To do that, you tell it `onclick`, to run a **function** -- something you set at the beginning that performs an action when it's triggered.
 
 
-```
+```javascript
 // This time, we add an "onclick" method that will trigger a function
 new_element.innerHTML = "<button onclick='myFunction()'>Click me</button>"
 
@@ -208,7 +210,7 @@ function myFunction() {
 
 We can do even fancier things by combining functions and loops. Here's one that will show our data when a user clicks the button.
 
-```
+```javascript
 new_element.innerHTML = "<button onclick='showNames()'>Click me</button>"
 
 //create a function
@@ -234,14 +236,14 @@ Another basic component of Javascript is the ability to test whether something i
 
 Here's a basic example:
 
-```
+```javascript
 if (6<7) {
 	console.log("Why is 6 afraid of 7? Because 7 8 9")
 }
 ```
 It's true that 6 is less than 7, so the code in the bracket runs. Otherwise, it can use an `else` or `else if` (else, if) action:
 
-```
+```javascript
 if(6>7) {
 	console.log('Why is 6 afraid of 7? Because 7 8 9')
 } else if (6==7) {
@@ -252,7 +254,7 @@ if(6>7) {
 ```
 In a more elaborate scenario, we can test our data and take action based on it.
 
-```
+```javascript
 new_element.innerHTML = "<button onclick='testPets()'>Click me</button>"
 
 //create a function
@@ -283,12 +285,13 @@ When you're coding in Javascript, you don't need to just run the code itself. Yo
 
 One example is JQuery, a library that makes it easier to grab elements and add interactivity to them. If you add this line **in your HTML**:
 
-```
+```javascript
 <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
 ```
 
 You can re-write that earlier, simple button click like this:
-```
+
+```javascript
 new_element.innerHTML = "<button id='jquery-button'>Click me</button>"
 
 $('#jquery-button').click(function(d) {
